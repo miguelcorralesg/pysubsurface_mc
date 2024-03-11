@@ -1,0 +1,34 @@
+[build-system]
+requires = [
+    "setuptools >= 65",
+    "setuptools_scm[toml]",
+    "wheel",
+]
+
+[project]
+name = "pysubsurface"
+authors = [
+    {name = "Name Lastname", email = "name.lastname@kaust.edu.sa"},
+]
+description = "A Python package for subsurface data analysis and modeling"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["subsurface", "geophysics", "seismic", "data analysis"]
+license = {text = "BSD 3-Clause License"}
+classifiers = [
+        "Intended Audience :: Science/Research",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Scientific/Engineering :: Mathematics",
+        "Topic :: Scientific/Engineering :: Physics",
+    ]
+dependencies = [
+        "numpy >= 1.15.0",
+        "pylops >= 2.0.0",
+    ]
+dynamic = ["version"]
+
+[tool.setuptools.packages]
+find = {}
